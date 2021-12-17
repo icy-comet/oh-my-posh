@@ -137,6 +137,14 @@ To solely rely on Oh My Posh to set the prompt, you can configure the follwing s
 ```bash
 conda config --set changeps1 False
 ```
+### Python: venv virtual environment's name is auto-added before/after the prompt
+
+Python recommended `venv` library automatically adds virtual environment name to the prompt upon its activation.
+To disable this behaviour and solely rely on Oh My Posh prompt, set `VIRTUAL_ENV_DISABLE_PROMPT` environment variable to `1`.
+
+```powershell
+$env:VIRTUAL_ENV_DISABLE_PROMPT=1
+```
 
 [new-issue]: https://github.com/JanDeDobbeleer/oh-my-posh/issues/new/choose
 [latest]: https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest
